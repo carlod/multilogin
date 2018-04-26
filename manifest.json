@@ -1,0 +1,26 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icon_128.png",
+      "default_title": "New unique Tab"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Log into multiple accounts on the same site simultaneously.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseD6DwxgEdP0HpspBSvQ8OJJp0fQLM7QlTyUrfIPCcNwLfMxPN2ho5fA9v7Vfj5qWUspcXBv46mgZT3rmgIzTlvmuCKN8ovW8SQLYHFmBEwwry71ssU2v2Q5EgJY6KW/nauNTePqXBZoaMCWB64RR1GtfLGng2/P3B6LiGZdBax3QknH0SxwmdG5eGXdiD3MbpmwwxXz1crL2a2EtCCvksRP4nLWKCbGcW049+o0H2676TSCeLNQqy+YLwndg7S7by4vy64HklZEMXfmcC93sbFJof+pcnHjn+KbWtMUu9FDxspGytl+Pkz8+6WbQ5Il0/gZAUsADzVFtqwwAIxIFQIDAQAB",
+   "manifest_version": 2,
+   "name": "MultiLogin",
+   "permissions": [ "contextMenus", "cookies", "storage", "tabs", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation", "management" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.2"
+}
