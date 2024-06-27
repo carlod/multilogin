@@ -4,7 +4,7 @@
    },
    "browser_action": {
       "default_icon": "icon_128.png",
-      "default_title": "New unique Tab"
+      "default_title": "New Session Tab"
    },
    "content_scripts": [ {
       "all_frames": true,
@@ -17,10 +17,8 @@
    "icons": {
       "128": "icon_128.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAseD6DwxgEdP0HpspBSvQ8OJJp0fQLM7QlTyUrfIPCcNwLfMxPN2ho5fA9v7Vfj5qWUspcXBv46mgZT3rmgIzTlvmuCKN8ovW8SQLYHFmBEwwry71ssU2v2Q5EgJY6KW/nauNTePqXBZoaMCWB64RR1GtfLGng2/P3B6LiGZdBax3QknH0SxwmdG5eGXdiD3MbpmwwxXz1crL2a2EtCCvksRP4nLWKCbGcW049+o0H2676TSCeLNQqy+YLwndg7S7by4vy64HklZEMXfmcC93sbFJof+pcnHjn+KbWtMUu9FDxspGytl+Pkz8+6WbQ5Il0/gZAUsADzVFtqwwAIxIFQIDAQAB",
    "manifest_version": 2,
-   "name": "MultiLogin",
+   "name": "NewSession",
    "permissions": [ "contextMenus", "cookies", "storage", "tabs", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation", "management" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "2.1.2"
+   "version": "1.0"
 }
